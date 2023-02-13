@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Welcome to the Game</title>
+      <link rel="stylesheet" href="/css/login.css">
+  </head>
+  <body>
+    <!-- Start:: Splash Screen -->
+    <div class="splash">
+      <h1 class="splash__title">Welcome to the Game!</h1>
+    </div>
+    <!-- End:: Splash Screen -->
+
+    <!-- Start:: Highest Score -->
+    <ol class="highestName"></ol>
+    <ol class="highestScore"></ol>
+    <!-- End:: Highest Score -->
+
+    <form id="login-form" class="form" action="/rules.html"> 
+      <input id="username" class="username" type="text" placeholder="Enter Username" value=""/>
+      <!-- <input id="userPw" type="password" placeholder="Enter Password" value=""/> -->
+      <input id="login_btn" class="btn" type="button" value="Login" onClick="check()"/> 
+    </form>
+
+  <script type="text/javascript" language="javascript" src="/js/login.js"></script>
+  </body>
+</html>

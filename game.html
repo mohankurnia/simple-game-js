@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play | Game</title>
+
+  <link rel="stylesheet" href="/css/game.css">
+</head>
+<body onload="startGame(); initScore();">
+  <br>
+  <div class="game">
+    <div class="game__info">
+      <p class="user"></p>
+      <ul id="highScores"></ul>
+      <div class="button-group">
+        <button onmousedown="restart()">RESTART</button>
+        <button onmousedown="logout()">LOGOUT</button>
+      </div>
+      <!-- <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button> -->
+      <!-- <button>UP</button>
+      <button>DOWN</button>
+      <button>LEFT</button>
+      <button>RIGHT</button> -->
+    </div>
+
+    <div class="game__background">
+      <h3 class="background__title">Change Background</h3>
+      <div class="background__option">
+        <img class="background__image" src="./assets/images/back-1.jpg" alt="">
+        <img class="background__image" src="./assets/images/back-2.jpg" alt="">
+        <img class="background__image" src="./assets/images/back-3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/game.js"></script>
+</body>
+</html>
